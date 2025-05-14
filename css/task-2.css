@@ -1,0 +1,13 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   flex-wrap: wrap;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.gallery > li {
+    width: calc((100% - 60px) / 3);
+}
