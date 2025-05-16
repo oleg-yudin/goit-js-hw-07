@@ -11,13 +11,15 @@ function callback(event) {
     const email = form.elements.email.value;
     const password = form.elements.password.value;
 
-    if (email === "" || password === "") {
+    if (email.trim() === "" || password.trim() === "") {
        return window.alert('All form fields must be filled in');
     }
-    count.email = email;
+    count.email = email.trim();
     count.password = password.trim();
 
     form.reset();
+
+   console.log(count); 
 }
 
-console.log(count);
+

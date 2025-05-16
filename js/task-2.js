@@ -28,14 +28,7 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 
-for (const i of images) {
-  const a = document.createElement("li");
-  gallery.append(a);
+const add = images.map((item) => `<li><img src="${item.url}" alt="${item.alt}"></li>`).join("");
 
-  let img = document.createElement("img");
-  img.src = i.url;
-  img.alt = i.alt;
-  a.append(img);
-  
-}
 
+gallery.insertAdjacentHTML("afterbegin", add);

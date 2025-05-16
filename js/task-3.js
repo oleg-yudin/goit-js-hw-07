@@ -3,7 +3,7 @@ const span = document.querySelector("#name-output");
 
 
 input.addEventListener("input", (event) => {
-    if (event.data == " ") {
+    if (event.data.trim() == " " || event.data.trim() == "") {
         span.textContent = "Anonymous";
     }
     else {
@@ -11,11 +11,4 @@ input.addEventListener("input", (event) => {
     }
 })
 
-input.addEventListener("focus", () => {
-    span.textContent = "Anonymous";
-})
 
-
-input.addEventListener("blur", () => {
-    span.textContent = "Anonymous";
-})
