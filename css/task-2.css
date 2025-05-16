@@ -1,7 +1,10 @@
+ul {
+    list-style-type: none;
+}
 .gallery {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 24px;
    flex-wrap: wrap;
 }
 img {
@@ -9,5 +12,5 @@ img {
     width: 100%;
 }
 .gallery > li {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 48px) / 3);
 }

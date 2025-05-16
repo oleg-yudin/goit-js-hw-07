@@ -1,0 +1,38 @@
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-class{
+    width: 360px;
+    height: 22px;
+    border-radius: 4px
+}
+.input-class:hover,
+.input-class:focus{
+    border-color: black;
+}
+
+
+button{
+    border-radius: 8px;
+        padding: 8px 16px;
+        width: 86px;
+        height: 40px;
+        background:#4e75ff;
+        margin-top: 16px;
+        outline: none;
+        border-color: transparent;
+        font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+        
+            /* line-height: 24px; */
+            line-height: 150%;
+            letter-spacing: 0.04em;
+            color: #fff;
+    }
+button:hover{
+    background: #6c8cff;
+}
